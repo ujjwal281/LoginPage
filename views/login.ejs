@@ -1,19 +1,39 @@
-<h1>Login</h1>
 
-<% if(messages.error) { %>
-    <%= messages.error %>
-  <% } %>
+<div style="display:flex; justify-content :center; align-items : center; height:70% ;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+    <div style=" background-color:aqua; border-radius:20px; padding:60px 50px; backdrop-filter:blur(20px) ;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);" >
+        <h1 style=" display:flex; justify-content: center; align-items : center;">Login</h1>
+        <% if(messages.error) { %>
+            <%= messages.error %>
+            <% } %>
+            
+            <form style="color:blue;  " action="/login" method="POST">
+                <div style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
 
-<form style="" action="/login" method="POST">
-    <div>
-        <label class="text-blue" for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <div>
-        <label for="name">Password</label>
-        <input type="password" id="password" name="password" required>
-    </div>
-    <button type="submit">Login</button>
-</form>
+                    <label class="text-blue" for="email">Email</label>
+                    <div>
 
-<a href="/register">register</a>
+                        <input style="background:transparent;border:none;outline:none;" type="email" id="email" name="email" required>
+                        <hr style="margin-top:-1px">
+                        
+                    </div>
+                </div>
+                <div>
+                    <label for="name">Password</label>
+                    <div>
+                            
+                        <input style="background:transparent;border:none;outline:none;" type="password" id="password" name="password" required>
+                        <hr style="margin-top:-1px">
+
+                    </div>
+                        
+                </div>
+                <div style=" display: flex ;  justify-content:center ;align-items:center; margin-top:5px;">
+                    <button style="color:aliceblue; background-color:black; padding:2px 20px; border-radius:10px "type="submit">Login</button>
+                </div>
+            </form>
+            <div style="display: flex ; justify-content:center ;align-items:center;">
+                <a style="text-decoration:none;" href="/register">Register?</a>
+            </div>
+        </div>
+</div>

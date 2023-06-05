@@ -1,20 +1,43 @@
+<div style="display:flex; justify-content :center; align-items : center; height:70% ;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+    <div style=" background-color:aqua; border-radius:20px; padding:60px 50px; backdrop-filter:blur(20px) ;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);" >
+
 <h2>Register</h2>
 <div class="">
-    <form class="" action="/register" method="POST">
-        <div style="color: blue;">
+    <form style="color:blue;" action="/register" method="POST">
+
+        <div style="">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+            <div>
+                <input style="background:transparent;border:none;outline:none;" type="text" id="name" name="name" required>
+                <hr style="margin-top:-1px">
+            </div>
         </div>
+
         <div>
             <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required>
+            <div>
+                <input style="background:transparent;border:none;outline:none;" type="email" id="email" name="email" required>
+                <hr style="margin-top:-1px">
+            </div>
         </div>
         <div>
             <label for="name">Password</label>
-            <input type="password" id="password" name="password" required>
+            <div>
+                <input style="background:transparent;border:none;outline:none;" type="password" id="password" name="password" required>
+                <hr style="margin-top:-1px">
+            </div>
         </div>
-        <button type="submit">Register</button>
+        <div style=" display: flex ;  justify-content:center ;align-items:center; margin-top:5px;">
+            <button style="color:aliceblue; background-color:black; padding:2px 20px; border-radius:10px " type="submit">Register</button>
+        </div>
     </form>
 </div>
 
-<a href="/login">Login</a>
+<div style="display: flex ; justify-content:center ;align-items:center;">
+    <a href="/login">Login</a>
+</div>
+
+</div>
+</div>
+
